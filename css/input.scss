@@ -1,7 +1,405 @@
-$fontSize: 18px;
-$primaryTextColor: red;
+$fontSize: 16px;
+$primaryTextColor: #00adee;
+$secondaryColor: #4f4f4f;
+$thirdColor: #ffffff;
 
-p {
-    font-size: $fontSize;
-    color: $primaryTextColor;
+@mixin font {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+@mixin up-title {
+  color: $primaryTextColor;
+  font-weight: bold;
+  @include font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-main {
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.top {
+  display: flex;
+  background: #f4f6f9;
+
+  .top-left {
+    position: relative;
+    margin-left: 160px;
+    margin-top: 63px;
+    margin-bottom: 160px;
+
+    z-index: 2;
+
+.logo {
+  cursor: pointer;
+}
+
+    .top-name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      color: $secondaryColor;
+    }
+
+    .top-discription {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      color: $secondaryColor;
+    }
+
+    .link-wrapper {
+      display: flex;
+    }
+
+    .app {
+      display: block;
+      margin-right: 35px;
+      width: 157px;
+      height: 47px;
+      background: url(../images/AppleStore.png) no-repeat;
+    }
+
+    .goog {
+      display: block;
+      width: 157px;
+      height: 47px;
+      background: url(../images/GooglePlay.png) no-repeat;
+    }
+  }
+
+  /*.top-right {
+    position: relative;
+    width: 100%;
+    background-size: auto;
+    background: url(../images/Frame.png) no-repeat center top fixed;
+    background-position: right;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+    border: 1px solid red;
+   }*/
+   .img-top {
+     display: block;
+     position: relative;
+     max-width: 100%;
+     height: auto;
+     z-index: 1;
+
+   }
+}
+
+.about {
+  display: flex;
+
+  .about-pictures {
+    margin-left: 95px;
+    padding-top: 60px;
+    padding-right: 70px;
+
+
+    .pictures-top {
+      position: relative;
+      top: 30px;
+      z-index: 2;
+    }
+    .pictures-bottom {
+      position: relative;
+      z-index: 1;
+      bottom: 95px;
+      left: 150px;
+    }
+  }
+  .about-discription {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 60px;
+    margin-right: 236px;
+
+   .up-title {
+     color: $primaryTextColor;
+     font-weight: bold;
+     @include font;
+   }
+
+   .title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+   }
+
+   .content {
+    @include font;
+   }
+
+   .learn {
+     text-decoration: none;
+     font-weight: bold;
+     @include font;
+     color: $primaryTextColor;
+   }
+  }
+}
+
+.interface {
+  display: flex;
+  margin-left: 160px;
+  background: white;
+
+  .interface-left {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 170px 0;
+
+    .up-title {
+      @include up-title;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 37px;
+      color: #333333;
+     }
+
+    .content {
+      @include font;
+     }
+
+     .learn {
+      text-decoration: none;
+      font-weight: bold;
+      @include font;
+      color: $primaryTextColor;
+    }
+  }
+
+  .interface-right {
+    position: relative;
+    z-index: 2;
+    min-width: 50%;
+    background: url(../images/EllipseGroup.svg) no-repeat 80%;
+  }
+}
+
+  .features {
+    margin: 0 auto;
+    max-width: 1440px;
+    background: $primaryTextColor;
+    text-align: center;
+    color: white;
+    padding: 70px 0;
+
+    .features-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 90px;
+      margin: 30px 160px;
+
+     .feat {
+       text-align: left;
+     }
+    }
+}
+
+.companies {
+  background: #fafafa;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+
+  .logo-wrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+}
+
+.info {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 465px;
+  background: url(../images/Frame2.png) no-repeat -5%;
+  background-size: contain;
+
+.info-img {
+  width: 100%;
+}
+
+  .info-information {
+    margin-left: 120px;
+    padding: 60px 130px 50px;
+
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 37px;
+    }
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.link-wrapper {
+  display: flex;
+}
+
+.app {
+  display: block;
+  margin-right: 35px;
+  width: 157px;
+  height: 47px;
+  background: url(../images/AppleStore.png) no-repeat;
+}
+
+.goog {
+  display: block;
+  width: 157px;
+  height: 47px;
+  background: url(../images/GooglePlay.png) no-repeat;
+}
+  }
+}
+
+.bottom {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-around;
+  background: $primaryTextColor;
+  color: white;
+  padding: 60px 0;
+
+
+  .list {
+    display: flex;
+    min-width: 450px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .social {
+    display: flex;
+    min-width: 120px;
+    justify-content: space-between;
+    a {
+      display: flex;
+    justify-content: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: white;
+      align-items: center;
+    }
+   }
+  }
+
+@media(max-width: 505px) {
+  .top {
+    max-width: 360px;
+    background: #f4f6f9;
+    .top-left {
+      margin-left: 0px;
+      text-align: center;
+    }
+    .top-right {
+    display: none;
+  }
+}
+
+.about {
+  flex-direction: column-reverse;
+  .about-pictures {
+    margin: 0;
+  }
+  .about-discription {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.interface {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+
+  .interface-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .interface-right {
+
+  }
+}
+
+.features {
+  background: #fafafa;
+  color: $secondaryColor;
+  .features-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.logo-wrapper {
+  flex-wrap: wrap;
+}
+
+.info {
+  flex-direction: column-reverse;
+  height: 600px;
+  text-align: center;
+background: white;
+
+  .info-img {
+    width: 300px;
+    height: 300px;
+    background: url(../images/Frame2.png) no-repeat -5%;
+    background-size: contain;
+  }
+
+  .info-information {
+    padding: 0;
+    margin: 15px;
+  }
+}
+
+.bottom {
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+
+  .list {
+    padding: 0;
+  }
+
+  .social {
+width: 80px;
+  }
+}
 }
