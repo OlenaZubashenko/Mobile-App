@@ -363,6 +363,17 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+
+    .one {
+      width: 20px;
+        height: 20px;
+        background: url(../images/mob1.png);
+      .feat-img1 {
+        display: none;
+      }
+    }
+
+
   }
 }
 
