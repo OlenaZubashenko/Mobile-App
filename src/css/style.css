@@ -1,4 +1,5 @@
 body {
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,71 +12,64 @@ body {
 
 .top {
   display: flex;
-  background: #f4f6f9;
-  /*.top-right {
-    position: relative;
-    width: 100%;
-    background-size: auto;
-    background: url(../images/Frame.png) no-repeat center top fixed;
-    background-position: right;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    z-index: 1;
-    border: 1px solid red;
-   }*/
+  background: #f4f6f9 url(../images/Frame.png) top right no-repeat;
+  background-size: 50%;
 }
-.top .top-left {
-  position: relative;
+.top .top-content {
+  max-width: 546px;
   margin-left: 160px;
   margin-top: 63px;
   margin-bottom: 160px;
-  z-index: 2;
 }
-.top .top-left .logo {
+.top .top-content .logo {
   cursor: pointer;
 }
-.top .top-left .top-name {
+.top .top-content .logo :hover {
+  opacity: 0.5;
+}
+.top .top-content .top-name {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
   color: #4f4f4f;
 }
-.top .top-left .top-discription {
+.top .top-content .top-discription {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   color: #4f4f4f;
 }
-.top .top-left .link-wrapper {
+.top .top-content .link-wrapper {
   display: flex;
 }
-.top .top-left .app {
+.top .top-content .app {
   display: block;
   margin-right: 35px;
   width: 157px;
   height: 47px;
   background: url(../images/AppleStore.png) no-repeat;
+  cursor: pointer;
 }
-.top .top-left .goog {
+.top .top-content .app :hover {
+  opacity: 0.5;
+}
+.top .top-content .goog {
   display: block;
   width: 157px;
   height: 47px;
   background: url(../images/GooglePlay.png) no-repeat;
+  cursor: pointer;
 }
-.top .img-top {
-  display: block;
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
+.top .top-content .goog :hover {
+  opacity: 0.5;
 }
 
 .about {
   display: flex;
+  background: url(../images/backgrOpacity.png) left top no-repeat;
+  background-size: 50% auto;
 }
 .about .about-pictures {
   margin-left: 95px;
@@ -87,6 +81,9 @@ body {
   top: 30px;
   z-index: 2;
 }
+.about .about-pictures .pictures-top :hover {
+  background: red;
+}
 .about .about-pictures .pictures-bottom {
   position: relative;
   z-index: 1;
@@ -97,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  padding-left: 60px;
+  padding-left: 130px;
   margin-right: 236px;
 }
 .about .about-discription .up-title {
@@ -125,6 +122,10 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #00adee;
+  cursor: pointer;
+}
+.about .about-discription .learn :hover {
+  opacity: 0.5;
 }
 
 .interface {
@@ -163,6 +164,10 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #00adee;
+  cursor: pointer;
+}
+.interface .interface-left .learn :hover {
+  opacity: 0.5;
 }
 .interface .interface-right {
   position: relative;
@@ -187,6 +192,9 @@ body {
 }
 .features .features-wrapper .feat {
   text-align: left;
+}
+.features .features-wrapper .feat .one {
+  display: none;
 }
 
 .companies {
@@ -238,12 +246,20 @@ body {
   width: 157px;
   height: 47px;
   background: url(../images/AppleStore.png) no-repeat;
+  cursor: pointer;
+}
+.info .info-information .app :hover {
+  opacity: 0.5;
 }
 .info .info-information .goog {
   display: block;
   width: 157px;
   height: 47px;
   background: url(../images/GooglePlay.png) no-repeat;
+  cursor: pointer;
+}
+.info .info-information .goog :hover {
+  opacity: 0.5;
 }
 
 .bottom {
@@ -261,6 +277,12 @@ body {
   justify-content: space-between;
   list-style: none;
 }
+.bottom .list .item {
+  cursor: pointer;
+}
+.bottom .list .item :hover {
+  opacity: 0.5;
+}
 .bottom .social {
   display: flex;
   min-width: 120px;
@@ -274,6 +296,7 @@ body {
   border-radius: 50%;
   background-color: white;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (max-width: 505px) {
@@ -281,22 +304,38 @@ body {
     max-width: 360px;
     background: #f4f6f9;
   }
-  .top .top-left {
-    margin-left: 0px;
+  .top .top-content {
+    margin: 0px auto;
+    padding: 34px 20px 60px;
     text-align: center;
   }
-  .top .top-right {
-    display: none;
+  .top .top-discription {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .top .link-wrapper .app {
+    margin-right: 10px;
   }
 
   .about {
     flex-direction: column-reverse;
+    background: url(../images/backgrOpacity.png) left bottom no-repeat;
+    background-size: 150% auto;
   }
   .about .about-pictures {
     margin: 0;
   }
+  .about .about-pictures .pictures-top {
+    width: 290px;
+    height: 200px;
+  }
+  .about .about-pictures .pictures-bottom {
+    width: 247px;
+    height: 149px;
+    left: 85px;
+  }
   .about .about-discription {
-    padding: 0;
+    padding: 20px;
     margin: 0;
     text-align: center;
   }
@@ -320,6 +359,16 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+  }
+  .features .features-wrapper .feat {
+    text-align: center;
+  }
+  .features .features-wrapper .feat .one {
+    display: block;
+    margin: 0 auto;
+  }
+  .features .features-wrapper .feat .none {
+    display: none;
   }
 
   .logo-wrapper {
