@@ -41,7 +41,7 @@ background-size: 50%;
 .logo {
   cursor: pointer;
 :hover {
-  opacity: .5;
+  opacity: .8;
 }
 }
 
@@ -63,7 +63,6 @@ background-size: 50%;
 
     .link-wrapper {
       display: flex;
-    }
 
     .app {
       display: block;
@@ -84,6 +83,7 @@ background-size: 50%;
       cursor: pointer;
       :hover {
         opacity: .5;
+      }
       }
     }
   }
@@ -186,7 +186,7 @@ background-size: 50%;
       color: $primaryTextColor;
       cursor: pointer;
       :hover {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }

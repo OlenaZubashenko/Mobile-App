@@ -25,7 +25,7 @@ body {
   cursor: pointer;
 }
 .top .top-content .logo :hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .top .top-content .top-name {
   font-style: normal;
@@ -44,7 +44,7 @@ body {
 .top .top-content .link-wrapper {
   display: flex;
 }
-.top .top-content .app {
+.top .top-content .link-wrapper .app {
   display: block;
   margin-right: 35px;
   width: 157px;
@@ -52,17 +52,17 @@ body {
   background: url(../images/AppleStore.png) no-repeat;
   cursor: pointer;
 }
-.top .top-content .app :hover {
+.top .top-content .link-wrapper .app :hover {
   opacity: 0.5;
 }
-.top .top-content .goog {
+.top .top-content .link-wrapper .goog {
   display: block;
   width: 157px;
   height: 47px;
   background: url(../images/GooglePlay.png) no-repeat;
   cursor: pointer;
 }
-.top .top-content .goog :hover {
+.top .top-content .link-wrapper .goog :hover {
   opacity: 0.5;
 }
 
